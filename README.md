@@ -62,7 +62,8 @@ meet-wise/
 git clone https://github.com/<username>/meet-wise.git
 cd meet-wise
 
-2. Backend Setup
+*** 2.Backend Setup
+```bash
 bashcd backend
 python3 -m venv venv
 source venv/bin/activate       # macOS/Linux
@@ -102,6 +103,7 @@ bashcurl -X POST http://127.0.0.1:8000/meetings/<meeting_id>/artifacts/text \
 
 ##Get Meeting Summary
 bashcurl -X GET http://127.0.0.1:8000/meetings/<meeting_id>/summary
+
 
 
 
