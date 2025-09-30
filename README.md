@@ -103,6 +103,5 @@ bashcurl -X POST http://127.0.0.1:8000/meetings/<meeting_id>/artifacts/text \
 ##Get Meeting Summary
 bashcurl -X GET http://127.0.0.1:8000/meetings/<meeting_id>/summary
 
-<img width="1710" height="1107" alt="Screenshot 2025-09-30 at 8 17 30 PM" src="https://github.com/user-attachments/assets/acd18317-4434-42e5-96b3-b5b7042cba26" />
 
 
