@@ -142,7 +142,8 @@ curl -X POST http://127.0.0.1:8000/meetings/<meeting_id>/artifacts/text \
 curl -X GET http://127.0.0.1:8000/meetings/<meeting_id>/summary
 ```
 
-````
+
+
 
 
 
