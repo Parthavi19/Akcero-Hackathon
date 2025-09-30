@@ -1,4 +1,3 @@
-```markdown
 # MeetWise: Smart Meeting Management Platform
 
 **MeetWise** is a web application that streamlines meeting management by automatically handling scheduling, participant tracking, transcripts, summaries, and action items using AI. It helps teams organize, document, and track meetings efficiently, ensuring accountability and easy retrieval of meeting artifacts.
@@ -8,42 +7,41 @@
 ## Features
 
 ### Meeting Management
-- Create, view, and update meetings.
-- Add participants with roles and avatars.
-- Schedule meetings with specific dates.
+- Create, view, and update meetings
+- Add participants with roles and avatars
+- Schedule meetings with specific dates
 
 ### Meeting Artifacts
-- Upload meeting transcripts.
-- Store notes, decisions, and action items.
-- Generate summaries using AI (requires LLM integration, e.g., Gemini API).
+- Upload meeting transcripts
+- Store notes, decisions, and action items
+- Generate summaries using AI (requires LLM integration, e.g., Gemini API)
 
 ### Smart Summarization
-- Automatically generate meeting summaries, decisions, and action items (if API quota is available).
+- Automatically generate meeting summaries, decisions, and action items (if API quota is available)
 
 ### Frontend-Backend Integration
-- FastAPI backend with REST endpoints.
-- React + Vite frontend communicates with backend APIs.
-- WebSocket support for real-time updates (planned).
+- FastAPI backend with REST endpoints
+- React + Vite frontend communicates with backend APIs
+- WebSocket support for real-time updates (planned)
 
 ### Database
-- PostgreSQL database stores meetings, participants, and artifacts.
+- PostgreSQL database stores meetings, participants, and artifacts
 
 ---
 
 ## Tech Stack
-- **Frontend**: React.js, Vite  
-- **Backend**: FastAPI, Python 3.10+  
-- **Database**: PostgreSQL  
-- **Real-time**: WebSocket (planned)  
-- **AI Integration**: Google Gemini API (Generative AI for summarization)  
-- **Deployment**: AWS EC2 + RDS (backend), Vercel/Netlify (frontend)  
+- **Frontend:** React.js, Vite  
+- **Backend:** FastAPI, Python 3.10+  
+- **Database:** PostgreSQL  
+- **Real-time:** WebSocket (planned)  
+- **AI Integration:** Google Gemini API  
+- **Deployment:** AWS EC2 + RDS (backend), Vercel/Netlify (frontend)  
 
 ---
 
 ## Project Structure
 
-```
-
+```text
 meet-wise/
 ├── backend/
 │   ├── app/
@@ -61,7 +59,6 @@ meet-wise/
 │   └── package.json         # Frontend dependencies
 ├── README.md
 └── .env
-
 ````
 
 ---
@@ -69,10 +66,11 @@ meet-wise/
 ## Setup Instructions
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/<username>/meet-wise.git
 cd meet-wise
-````
+```
 
 ### 2. Backend Setup
 
@@ -89,7 +87,7 @@ pip install -r requirements.txt
 
 Create a `.env` file in the backend folder:
 
-```
+```text
 DATABASE_URL=postgresql://<user>:<password>@localhost:5432/meetwise
 GEMINI_API_KEY=<your_gemini_api_key>
 ```
@@ -144,6 +142,7 @@ curl -X POST http://127.0.0.1:8000/meetings/<meeting_id>/artifacts/text \
 curl -X GET http://127.0.0.1:8000/meetings/<meeting_id>/summary
 ```
 
-```
+````
+
 
 
