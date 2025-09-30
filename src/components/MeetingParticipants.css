@@ -1,0 +1,114 @@
+.participants-container {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.participants-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.participants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.participant-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 1.5rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.participant-card:hover {
+  transform: translateY(-5px);
+  border-color: #9b59b6;
+  box-shadow: 0 8px 24px rgba(155, 89, 182, 0.2);
+}
+
+.participant-avatar-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.participant-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: white;
+}
+
+.participant-status {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 16px;
+  height: 16px;
+  background: #2ecc71;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.participant-info {
+  text-align: center;
+  width: 100%;
+}
+
+.participant-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 0.5rem 0;
+}
+
+.participant-email {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin: 0 0 0.5rem 0;
+  word-break: break-word;
+}
+
+.participant-role {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #9b59b6;
+  color: white;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.participants-empty {
+  text-align: center;
+  padding: 3rem;
+  color: #95a5a6;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .participants-container {
+    padding: 1.5rem;
+  }
+
+  .participants-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .participant-avatar {
+    width: 70px;
+    height: 70px;
+  }
+}

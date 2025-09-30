@@ -1,0 +1,53 @@
+.option-card {
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+.option-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.option-card .icon {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.option-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.option-card p {
+  font-size: 0.9rem;
+  color: #374151;
+  margin-top: 0.25rem;
+}
+
+/* Card pastel gradients */
+.option-card.blue {
+  background: #e0f2fe;
+}
+
+.option-card.pink {
+  background: #fbcfe8;
+}
+
+.option-card.purple {
+  background: #e9d5ff;
+}
+
+.option-card.green {
+  background: #bbf7d0;
+}
+
+.option-card.yellow {
+  background: #fef9c3;
+}
