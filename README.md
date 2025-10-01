@@ -35,7 +35,6 @@
 - **Database:** PostgreSQL  
 - **Real-time:** WebSocket (planned)  
 - **AI Integration:** Google Gemini API  
-- **Deployment:** AWS EC2 + RDS (backend), Vercel/Netlify (frontend)  
 
 ---
 
@@ -141,6 +140,7 @@ curl -X POST http://127.0.0.1:8000/meetings/<meeting_id>/artifacts/text \
 ```bash
 curl -X GET http://127.0.0.1:8000/meetings/<meeting_id>/summary
 ```
+
 
 
 
