@@ -25,14 +25,14 @@
 - WebSocket support for real-time updates (planned)
 
 ### Database
-- PostgreSQL database stores meetings, participants, and artifacts
+- SQlite database stores meetings, participants, and artifacts
 
 ---
 
 ## Tech Stack
 - **Frontend:** React.js, Vite  
 - **Backend:** FastAPI, Python 3.10+  
-- **Database:** PostgreSQL  
+- **Database:** SQlite
 - **Real-time:** WebSocket (planned)  
 - **AI Integration:** Google Gemini API  
 
@@ -140,6 +140,7 @@ curl -X POST http://127.0.0.1:8000/meetings/<meeting_id>/artifacts/text \
 ```bash
 curl -X GET http://127.0.0.1:8000/meetings/<meeting_id>/summary
 ```
+
 
 
 
